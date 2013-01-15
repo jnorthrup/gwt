@@ -1,0 +1,16 @@
+#*.roo
+#*_Roo*
+*.iml
+*.ipr
+*.iws
+.classpath
+.idea
+.project
+.settings
+1xio
+out
+reverseon-gwt
+RxF-idetekt
+target
+test-classes
+war

@@ -16,30 +16,32 @@
     </dependency>
   </dependencies>
   <modules>
-    <module>gwt-build_tools_ant_gwt</module>
-    <module>gwt-build_tools_doctool</module>
-    <module>gwt-dev_core</module>
-    <module>gwt-distro-source</module>
-    <module>gwt-distro-source_core</module>
-    <module>gwt-doc</module>
-    <module>gwt-elemental</module>
-    <module>gwt-elemental_examples_silvercomet</module>
-    <module>gwt-elemental_examples_simple</module>
-    <module>gwt-reference_Microbenchmarks</module>
-    <module>gwt-reference_code-museum</module>
-    <module>gwt-samples_dynatable</module>
-    <module>gwt-samples_dynatablerf</module>
-    <module>gwt-samples_hello</module>
-    <module>gwt-samples_json</module>
-    <module>gwt-samples_logexample</module>
-    <module>gwt-samples_mail</module>
-    <module>gwt-samples_mobilewebapp</module>
-    <module>gwt-samples_showcase</module>
-    <module>gwt-samples_validation</module>
-    <module>gwt-tools_api-checker</module>
-    <module>gwt-tools_benchmark-viewer</module>
-    <module>gwt-tools_cldr-import</module>
-    <module>gwt-tools_datetimefmtcreator</module>
-    <module>gwt-user</module>
+      <module>gwt-dev_core</module>
+      <module>gwt-user</module>
+      <module>gwt-user-super</module>
+
+      <module>gwt-build_tools_ant_gwt</module>
+      <module>gwt-build_tools_doctool</module>
+      <module>gwt-distro-source</module>
+      <module>gwt-distro-source_core</module>
+      <module>gwt-doc</module>
+      <module>gwt-elemental</module>
+      <module>gwt-elemental_examples_silvercomet</module>
+      <module>gwt-elemental_examples_simple</module>
+      <module>gwt-reference_Microbenchmarks</module>
+      <module>gwt-reference_code-museum</module>
+      <module>gwt-samples_dynatable</module>
+      <module>gwt-samples_dynatablerf</module>
+      <module>gwt-samples_hello</module>
+      <module>gwt-samples_json</module>
+      <module>gwt-samples_logexample</module>
+      <module>gwt-samples_mail</module>
+      <module>gwt-samples_mobilewebapp</module>
+      <module>gwt-samples_showcase</module>
+      <module>gwt-samples_validation</module>
+      <module>gwt-tools_api-checker</module>
+      <module>gwt-tools_benchmark-viewer</module>
+      <module>gwt-tools_cldr-import</module>
+      <module>gwt-tools_datetimefmtcreator</module>
   </modules>
 </project>

@@ -29,11 +29,17 @@
     <repository>
       <id>gwt-legacy</id>
       <name>gwt-Repo</name>
-      <url> file://${basedir}/../src/main/repository </url>
+      <url>  http://gwt-maven-rewraps.googlecode.com/git/ </url>
       <layout>default</layout>
     </repository>
   </repositories>
-  <dependencies> </dependencies>
+  <dependencies>
+      <dependency>
+          <groupId>deprecated</groupId>
+          <artifactId>cldr</artifactId>
+          <version>1.0-SNAPSHOT</version>
+      </dependency>
+  </dependencies>
   <build>
     <plugins>
       <plugin>
@@ -49,13 +55,5 @@
       </plugin>
     </plugins>
   </build>
-  <reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>javacc-maven-plugin</artifactId>
-        <version>2.4.1</version>
-      </plugin>
-    </plugins>
-  </reporting>
+
 </project>

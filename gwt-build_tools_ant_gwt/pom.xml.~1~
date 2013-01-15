@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>gwt-parent</artifactId>
+    <groupId>gwt</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <groupId>gwt</groupId>
+  <artifactId>gwt-build_tools_ant_gwt</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>gwt-build_tools_ant_gwt</name><description>build_tools_ant_gwt of gwt Terraformed... by jim@keyframe... on Intel(R) Core(TM) i7 CPU X 000 @ 3.33GHz GenuineIntel GNU/Linux... for  build_tools_ant_gwt,build_tools_doctool,dev_core,distro-source,distro-source_core,doc,elemental,elemental_examples_silvercomet,elemental_examples_simple,reference_Microbenchmarks,reference_code-museum,samples_dynatable,samples_dynatablerf,samples_hello,samples_json,samples_logexample,samples_mail,samples_mobilewebapp,samples_showcase,samples_validation,tools_api-checker,tools_benchmark-viewer,tools_cldr-import,tools_datetimefmtcreator,user... </description>
+  <url>http://keyframe/build_tools_ant_gwt</url><scm><tag>HEAD</tag></scm>
+  <!-- dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
+--> <repositories> <repository> <id>gwt-legacy</id> <name>gwt-Repo</name> <url> file://${basedir}/../src/main/repository </url> <layout>default</layout> </repository> </repositories> <dependencies> </dependencies> <build> <plugins> <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-compiler-plugin</artifactId> <configuration> <source>1.5</source> <target>1.5</target> <fork>true</fork> <meminitial>1024m</meminitial> <maxmem>1024m</maxmem> </configuration> </plugin> </plugins> </build> <reporting> <plugins> <plugin> <groupId>org.codehaus.mojo</groupId> <artifactId>javacc-maven-plugin</artifactId> <version>2.4.1</version> </plugin> </plugins> </reporting> </project>

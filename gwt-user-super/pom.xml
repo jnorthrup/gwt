@@ -51,7 +51,6 @@
           <fork>true</fork>
           <meminitial>1024m</meminitial>
           <maxmem>1024m</maxmem>
-            <excludes>**/super/**</excludes>
         </configuration>
       </plugin>
     </plugins>

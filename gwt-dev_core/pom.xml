@@ -33,7 +33,49 @@
       <layout>default</layout>
     </repository>
   </repositories>
-  <dependencies> </dependencies>
+      <dependencies>
+          <dependency>
+              <groupId>deprecated</groupId>
+              <artifactId>guava</artifactId>
+              <version>10.0.1-rebased</version>
+          </dependency>
+          <dependency>
+              <groupId>deprecated</groupId>
+              <artifactId>jdt</artifactId>
+              <version>3.4.2_r894</version>
+          </dependency>
+          <dependency>
+              <groupId>deprecated</groupId>
+              <artifactId>ant</artifactId>
+              <version>1.7.1</version>
+          </dependency>
+          <dependency>
+              <groupId>protobuf-java</groupId>
+              <artifactId>protobuf-java-rebased</artifactId>
+              <version>2.2.0</version>
+          </dependency>
+          <dependency>
+              <groupId>deprecated</groupId>
+              <artifactId>compiler-rebased</artifactId>
+              <version>1.0-SNAPSHOT</version>
+          </dependency>
+          <dependency>
+              <groupId>deprecated</groupId>
+              <artifactId>jetty</artifactId>
+              <version>6.1.11</version>
+          </dependency>
+          <dependency>
+              <groupId>deprecated</groupId>
+              <artifactId>htmlunit</artifactId>
+              <version>2.9</version>
+          </dependency>
+          <dependency>
+              <groupId>htmlunit-core</groupId>
+              <artifactId>htmlunit-core-js</artifactId>
+              <version>2.9</version>
+          </dependency>
+
+      </dependencies>
   <build>
     <plugins>
       <plugin>

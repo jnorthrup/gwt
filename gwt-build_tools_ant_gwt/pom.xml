@@ -24,7 +24,14 @@
       <layout>default</layout>
     </repository>
   </repositories>
-  <dependencies> </dependencies>
+      <dependencies>
+
+        <dependency>
+            <groupId>gwt</groupId>
+            <artifactId>gwt-user</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
   <build>
     <plugins>
       <plugin>

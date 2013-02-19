@@ -3,12 +3,10 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>gwt-parent</artifactId>
-    <groupId>gwt</groupId>
+    <groupId>com.google.gwt</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>gwt</groupId>
   <artifactId>gwt-samples_showcase</artifactId>
-  <version>1.0-SNAPSHOT</version>
   <name>gwt-samples_showcase</name>
   <description>samples_showcase of gwt Terraformed... by jim@keyframe... on Intel(R) Core(TM) i7 CPU X 000 @ 3.33GHz GenuineIntel GNU/Linux... for  build_tools_ant_gwt,build_tools_doctool,dev_core,distro-source,distro-source_core,doc,elemental,elemental_examples_silvercomet,elemental_examples_simple,reference_Microbenchmarks,reference_code-museum,samples_dynatable,samples_dynatablerf,samples_hello,samples_json,samples_logexample,samples_mail,samples_mobilewebapp,samples_showcase,samples_validation,tools_api-checker,tools_benchmark-viewer,tools_cldr-import,tools_datetimefmtcreator,user... </description>
   <url>http://keyframe/samples_showcase</url>
@@ -36,7 +34,7 @@
       <dependencies>
 
         <dependency>
-            <groupId>gwt</groupId>
+            <groupId>com.google.gwt</groupId>
             <artifactId>gwt-user</artifactId>
             <version>${project.parent.version}</version>
         </dependency>

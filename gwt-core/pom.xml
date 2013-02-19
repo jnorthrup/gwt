@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>gwt-parent</artifactId>
+    <groupId>gwt</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <groupId>gwt</groupId>
+  <artifactId>gwt-core</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>gwt-core</name>
+  <description>Core of the GWT/Java runtime, required classes for either the compiler or the other runtime details to be able to work</description>
+  <url>http://keyframe/dev_core</url>
+  <scm>
+    <tag>HEAD</tag>
+  </scm>
+  
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+      </resource>
+    </resources>
+  </build>
+
+</project>

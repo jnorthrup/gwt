@@ -17,6 +17,11 @@
   </scm>
       <dependencies>
           <dependency>
+              <groupId>gwt</groupId>
+              <artifactId>gwt-core</artifactId>
+              <version>${project.version}</version>
+          </dependency>
+          <dependency>
               <groupId>deprecated</groupId>
               <artifactId>guava</artifactId>
               <version>10.0.1-rebased</version>
@@ -56,7 +61,47 @@
               <artifactId>htmlunit-core-js</artifactId>
               <version>2.9</version>
           </dependency>
-
+          <!-- undeclared dependencies for legacy lib htmlunit -->
+          <dependency>
+              <groupId>commons-collections</groupId>
+              <artifactId>commons-collections</artifactId>
+              <version>3.2.1</version>
+          </dependency>
+          <dependency>
+              <groupId>commons-lang</groupId>
+              <artifactId>commons-lang</artifactId>
+              <version>2.4</version>
+          </dependency>
       </dependencies>
-
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.gwt.xml</include>
+          <include>**/client/**</include>
+          <include>**/shared/**</include>
+        </includes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+       <groupId>org.apache.maven.plugins</groupId>
+       <artifactId>maven-jar-plugin</artifactId>
+       <version>2.2</version>
+       <executions>
+         <execution>
+           <phase>package</phase>
+           <goals>
+             <goal>test-jar</goal>
+           </goals>
+           <configuration>
+             <!-- test jar is required by gwt-user, whether or not we run tests here -->
+             <skip>false</skip>
+           </configuration>
+         </execution>
+       </executions>
+     </plugin>
+    </plugins>
+  </build>
 </project>

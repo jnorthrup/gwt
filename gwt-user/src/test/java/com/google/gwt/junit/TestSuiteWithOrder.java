@@ -49,7 +49,7 @@ class TestSuiteWithOrder extends TestSuite {
     }
   }
 
-  private void addTestMethod(Method m, Class<?> theClass) {
+  private void addTestMethod(Method m, Class<? extends TestCase> theClass) {
     if (!Modifier.isPublic(m.getModifiers())) {
       addTest(warning("Test method isn't public: " + m.getName() + "(" + theClass.getName() + ")"));
       return;

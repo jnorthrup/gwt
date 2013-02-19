@@ -25,6 +25,7 @@ import com.google.gwt.junit.tools.GWTTestSuite;
 import com.google.gwt.thirdparty.guava.common.base.Predicate;
 
 import junit.framework.Test;
+import junit.framework.TestCase;
 
 import org.hibernate.jsr303.tck.util.client.Failing;
 import org.hibernate.jsr303.tck.util.client.NonTckTest;
@@ -119,7 +120,7 @@ public class TckTestSuiteWrapper extends GWTTestSuite {
       addTest(warning("No tests found in " + theClass.getName()));
   }
 
-  private void addTestMethod(Method m, Vector<String> names, Class<?> theClass) {
+  private void addTestMethod(Method m, Vector<String> names, Class<? extends TestCase> theClass) {
     String name = m.getName();
     if (names.contains(name))
       return;

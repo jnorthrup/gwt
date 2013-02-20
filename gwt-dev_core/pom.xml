@@ -50,17 +50,22 @@
               <version>6.1.11</version>
           </dependency>
           <dependency>
+              <groupId>net.sourceforge.htmlunit</groupId>
+              <artifactId>htmlunit</artifactId>
+              <version>2.10</version>
+          </dependency>
+<!--           <dependency>
               <groupId>deprecated</groupId>
               <artifactId>htmlunit</artifactId>
               <version>2.9</version>
-          </dependency>
-          <dependency>
+          </dependency> -->
+<!--           <dependency>
               <groupId>htmlunit-core</groupId>
               <artifactId>htmlunit-core-js</artifactId>
               <version>2.9</version>
-          </dependency>
+          </dependency> -->
           <!-- undeclared dependencies for legacy lib htmlunit -->
-          <dependency>
+<!--           <dependency>
               <groupId>commons-collections</groupId>
               <artifactId>commons-collections</artifactId>
               <version>3.2.1</version>
@@ -70,6 +75,12 @@
               <artifactId>commons-lang</artifactId>
               <version>2.4</version>
           </dependency>
+          <dependency>
+              <groupId>org.apache.httpcomponents</groupId>
+              <artifactId>httpclient</artifactId>
+              <version>4.2.1</version>
+          </dependency> -->
+          <!-- end htmlunit deps -->
       </dependencies>
   <build>
     <resources>
@@ -79,9 +90,16 @@
           <include>**/*.gwt.xml</include>
           <include>**/client/**</include>
           <include>**/jjs/intrinsic/**</include>
+          <include>**/gwt/lang/**</include>
+          <include>**/*.properties</include>
         </includes>
       </resource>
     </resources>
+    <testResources>
+      <testResource>
+        <directory>src/test/java</directory>
+      </testResource>
+    </testResources>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

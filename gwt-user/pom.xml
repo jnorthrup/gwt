@@ -105,5 +105,63 @@
           <scope>test</scope>
       </dependency>
   </dependencies>
-
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+         <includes>
+          <include>**/*.gwt.xml</include>
+          <include>**/client/**</include>
+          <include>**/shared/**</include>
+        </includes>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <directory>src/test/java</directory>
+      </testResource>
+    </testResources>
+    <plugins>
+        <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.10</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>gwt-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>test</phase>
+            <goals>
+              <goal>test</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <includes>**/*Suite.java</includes>
+          <strict>true</strict>
+          <mode>htmlunit</mode>
+          <testTimeOut>600</testTimeOut>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>${java.source.version}</source>
+          <target>${java.target.version}</target>
+          <fork>true</fork>
+          <meminitial>1024m</meminitial>
+          <maxmem>1024m</maxmem>
+          <excludes>
+            <exclude>**/emul/**</exclude>
+            <exclude>**/translatable/**</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>

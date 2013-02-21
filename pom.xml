@@ -50,7 +50,6 @@
       <module>gwt-core</module>
       <module>gwt-dev_core</module>
       <module>gwt-user</module>
-      <module>gwt-user-super</module>
 
       <module>gwt-build_tools_ant_gwt</module>
       <module>gwt-build_tools_doctool</module>

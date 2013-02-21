@@ -159,6 +159,7 @@
           <excludes>
             <exclude>**/emul/**</exclude>
             <exclude>**/translatable/**</exclude>
+            <exclude>**/super/**</exclude>
           </excludes>
         </configuration>
       </plugin>

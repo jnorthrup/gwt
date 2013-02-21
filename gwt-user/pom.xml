@@ -8,12 +8,6 @@
   </parent>
   <artifactId>gwt-user</artifactId>
   <name>gwt-user</name>
-  <description>user of gwt Terraformed... by jim@keyframe... on Intel(R) Core(TM) i7 CPU X 000 @ 3.33GHz GenuineIntel GNU/Linux... for  build_tools_ant_gwt,build_tools_doctool,dev_core,distro-source,distro-source_core,doc,elemental,elemental_examples_silvercomet,elemental_examples_simple,reference_Microbenchmarks,reference_code-museum,samples_dynatable,samples_dynatablerf,samples_hello,samples_json,samples_logexample,samples_mail,samples_mobilewebapp,samples_showcase,samples_validation,tools_api-checker,tools_benchmark-viewer,tools_cldr-import,tools_datetimefmtcreator,user... </description>
-  <url>http://keyframe/user</url>
-  <scm>
-    <tag>HEAD</tag>
-  </scm>
-
   <repositories>
     <repository>
       <id>jboss-public</id>

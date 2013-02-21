@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.google.gwt</groupId>
   <artifactId>gwt-parent</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>gwt-parent</name><description>gwt Terraformed... by jim@keyframe... on Intel(R) Core(TM) i7 CPU X 000 @ 3.33GHz GenuineIntel GNU/Linux... for  build_tools_ant_gwt,build_tools_doctool,dev_core,distro-source,distro-source_core,doc,elemental,elemental_examples_silvercomet,elemental_examples_simple,reference_Microbenchmarks,reference_code-museum,samples_dynatable,samples_dynatablerf,samples_hello,samples_json,samples_logexample,samples_mail,samples_mobilewebapp,samples_showcase,samples_validation,tools_api-checker,tools_benchmark-viewer,tools_cldr-import,tools_datetimefmtcreator,user... </description>
-  <url>http://keyframe</url><scm><tag>HEAD</tag></scm>
+  <name>gwt-parent</name>
+  <description>gwt Terraformed... by jim@keyframe... on Intel(R) Core(TM) i7 CPU X 000 @ 3.33GHz GenuineIntel
+    GNU/Linux... for
+    build_tools_ant_gwt,build_tools_doctool,dev_core,distro-source,distro-source_core,doc,elemental,elemental_examples_silvercomet,elemental_examples_simple,reference_Microbenchmarks,reference_code-museum,samples_dynatable,samples_dynatablerf,samples_hello,samples_json,samples_logexample,samples_mail,samples_mobilewebapp,samples_showcase,samples_validation,tools_api-checker,tools_benchmark-viewer,tools_cldr-import,tools_datetimefmtcreator,user...
+  </description>
+  <url>http://keyframe</url>
+  <scm>
+    <tag>HEAD</tag>
+  </scm>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.source.version>1.6</java.source.version>
@@ -24,16 +32,22 @@
     <repository>
       <id>gwt-legacy</id>
       <name>gwt-Repo</name>
-      <url>http://gwt-maven-rewraps.googlecode.com/git/ </url>
+      <url>http://gwt-maven-rewraps.googlecode.com/git/</url>
       <layout>default</layout>
     </repository>
   </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>maven-idea-plugin-repo</id>
+      <url>http://maven-idea-plugin.googlecode.com/svn/maven-repo</url>
+    </pluginRepository>
+  </pluginRepositories>
   <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.0</version>
+        <version>3.0</version>
         <configuration>
           <source>${java.source.version}</source>
           <target>${java.target.version}</target>
@@ -45,35 +59,72 @@
           </excludes>
         </configuration>
       </plugin>
+      <plugin>
+
+        <!--
+        intellij sanity.... If this plugin matters to you then paste this into console after you import the poms
+
+         for i in gwt-*; do excludes=$( find $i -name super -type d -or -name translatable -type d -or -name emul -type d ) ; rex=$(for j in ${excludes}; do echo '<excludeFolder url="file://$MODULE_DIR$'${j//$i}'" />'; done); sed -i -e 's|</content>|'"$(echo ${rex}|tr -d '\n') "'</content>|' $i/$i.iml;done
+
+          -->
+        <groupId>com.googlecode</groupId>
+        <artifactId>maven-idea-plugin</artifactId>
+        <version>1.6.1</version>
+        <configuration>
+          <assembleModulesIntoJars>false</assembleModulesIntoJars>
+          <compileInBackground>true</compileInBackground>
+          <jdkName>1.6</jdkName>
+          <jdkLevel>JDK_1_6</jdkLevel>
+          <downloadSources>true</downloadSources>
+          <downloadJavadocs>true</downloadJavadocs>
+          <assertNotNull>false</assertNotNull>
+          <optimizeImportsBeforeCommit>false</optimizeImportsBeforeCommit>
+          <reformatCodeBeforeCommit>false</reformatCodeBeforeCommit>
+          <performCodeAnalisisBeforeCommit>false</performCodeAnalisisBeforeCommit>
+          <autoscrollToSource>false</autoscrollToSource>
+          <autoscrollFromSource>true</autoscrollFromSource>
+          <hideEmptyPackages>false</hideEmptyPackages>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
   <modules>
-      <module>gwt-core</module>
-      <module>gwt-dev_core</module>
-      <module>gwt-user</module>
-
-      <module>gwt-build_tools_ant_gwt</module>
-      <module>gwt-build_tools_doctool</module>
-      <module>gwt-distro-source</module>
-      <module>gwt-distro-source_core</module>
-      <module>gwt-doc</module>
-      <module>gwt-elemental</module>
-      <module>gwt-elemental_examples_silvercomet</module>
-      <module>gwt-elemental_examples_simple</module>
-      <module>gwt-reference_Microbenchmarks</module>
-      <module>gwt-reference_code-museum</module>
-      <module>gwt-samples_dynatable</module>
-      <module>gwt-samples_dynatablerf</module>
-      <module>gwt-samples_hello</module>
-      <module>gwt-samples_json</module>
-      <module>gwt-samples_logexample</module>
-      <module>gwt-samples_mail</module>
-      <module>gwt-samples_mobilewebapp</module>
-      <module>gwt-samples_showcase</module>
-      <module>gwt-samples_validation</module>
-      <module>gwt-tools_api-checker</module>
-      <module>gwt-tools_benchmark-viewer</module>
-      <module>gwt-tools_cldr-import</module>
-      <module>gwt-tools_datetimefmtcreator</module>
+    <module>gwt-core</module>
+    <module>gwt-dev_core</module>
+    <module>gwt-user</module>
+    <!--
+        TODO: review
+        <module>gwt-build_tools_ant_gwt</module>
+        <module>gwt-build_tools_doctool</module>
+    -->
+    <module>gwt-distro-source</module>
+    <module>gwt-distro-source_core</module>
+    <module>gwt-doc</module>
+    <!--
+           TODO: revisit with maven-exec for the idl build
+        <module>gwt-elemental</module>
+        <module>gwt-elemental_examples_silvercomet</module>
+        <module>gwt-elemental_examples_simple</module>-->
+    <module>gwt-reference_Microbenchmarks</module>
+    <!--
+    TODO: visit museum
+        <module>gwt-reference_code-museum</module>
+    -->
+    <!--
+    TODO: samples_mobilewebapp already had a pom.
+    TODO: later
+    <module>gwt-samples_dynatable</module>
+     <module>gwt-samples_dynatablerf</module>
+     <module>gwt-samples_hello</module>
+     <module>gwt-samples_json</module>
+     <module>gwt-samples_logexample</module>
+     <module>gwt-samples_mail</module>
+     <module>gwt-samples_mobilewebapp</module>
+     <module>gwt-samples_showcase</module>
+     <module>gwt-samples_validation</module>-->
+    <module>gwt-tools_api-checker</module>
+    <module>gwt-tools_benchmark-viewer</module>
+    <module>gwt-tools_cldr-import</module>
+    <module>gwt-tools_datetimefmtcreator</module>
   </modules>
 </project>

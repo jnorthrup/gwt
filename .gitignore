@@ -9,8 +9,6 @@
 .settings
 1xio
 out
-reverseon-gwt
-RxF-idetekt
 target
 test-classes
 war

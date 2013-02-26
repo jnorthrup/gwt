@@ -1,5 +1,8 @@
-#*.roo
-#*_Roo*
+*.~
+*.~[0-9]
+*.[0-9]~
+*.bak
+*.swp
 *.iml
 *.ipr
 *.iws
@@ -7,7 +10,6 @@
 .idea
 .project
 .settings
-1xio
 out
 target
 test-classes

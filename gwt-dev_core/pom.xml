@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.google.gwt</groupId>
@@ -8,80 +9,77 @@
   </parent>
   <artifactId>gwt-dev_core</artifactId>
   <name>gwt-dev_core</name>
-  <description>dev_core of gwt Terraformed... by jim@keyframe... on Intel(R) Core(TM) i7 CPU X 000 @ 3.33GHz GenuineIntel GNU/Linux... for  build_tools_ant_gwt,build_tools_doctool,dev_core,distro-source,distro-source_core,doc,elemental,elemental_examples_silvercomet,elemental_examples_simple,reference_Microbenchmarks,reference_code-museum,samples_dynatable,samples_dynatablerf,samples_hello,samples_json,samples_logexample,samples_mail,samples_mobilewebapp,samples_showcase,samples_validation,tools_api-checker,tools_benchmark-viewer,tools_cldr-import,tools_datetimefmtcreator,user... </description>
   <url>http://keyframe/dev_core</url>
-  <scm>
-    <tag>HEAD</tag>
-  </scm>
-      <dependencies>
-          <dependency>
-              <groupId>com.google.gwt</groupId>
-              <artifactId>gwt-core</artifactId>
-              <version>${project.version}</version>
-          </dependency>
-          <dependency>
-              <groupId>deprecated</groupId>
-              <artifactId>guava</artifactId>
-              <version>10.0.1-rebased</version>
-          </dependency>
-          <dependency>
-              <groupId>deprecated</groupId>
-              <artifactId>jdt</artifactId>
-              <version>3.4.2_r894</version>
-          </dependency>
-          <dependency>
-              <groupId>deprecated</groupId>
-              <artifactId>ant</artifactId>
-              <version>1.7.1</version>
-          </dependency>
-          <dependency>
-              <groupId>protobuf-java</groupId>
-              <artifactId>protobuf-java-rebased</artifactId>
-              <version>2.2.0</version>
-          </dependency>
-          <dependency>
-              <groupId>deprecated</groupId>
-              <artifactId>compiler-rebased</artifactId>
-              <version>1.0-SNAPSHOT</version>
-          </dependency>
-          <dependency>
-              <groupId>deprecated</groupId>
-              <artifactId>jetty</artifactId>
-              <version>6.1.11</version>
-          </dependency>
-          <dependency>
-              <groupId>net.sourceforge.htmlunit</groupId>
-              <artifactId>htmlunit</artifactId>
-              <version>2.10</version>
-          </dependency>
-<!--           <dependency>
-              <groupId>deprecated</groupId>
-              <artifactId>htmlunit</artifactId>
-              <version>2.9</version>
-          </dependency> -->
-<!--           <dependency>
-              <groupId>htmlunit-core</groupId>
-              <artifactId>htmlunit-core-js</artifactId>
-              <version>2.9</version>
-          </dependency> -->
-          <!-- undeclared dependencies for legacy lib htmlunit -->
-<!--           <dependency>
-              <groupId>commons-collections</groupId>
-              <artifactId>commons-collections</artifactId>
-              <version>3.2.1</version>
-          </dependency>
-          <dependency>
-              <groupId>commons-lang</groupId>
-              <artifactId>commons-lang</artifactId>
-              <version>2.4</version>
-          </dependency>
-          <dependency>
-              <groupId>org.apache.httpcomponents</groupId>
-              <artifactId>httpclient</artifactId>
-              <version>4.2.1</version>
-          </dependency> -->
-          <!-- end htmlunit deps -->
-      </dependencies>
+  <dependencies>
+    <dependency>
+      <groupId>com.google.gwt</groupId>
+      <artifactId>gwt-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>deprecated</groupId>
+      <artifactId>guava</artifactId>
+      <version>10.0.1-rebased</version>
+    </dependency>
+    <dependency>
+      <groupId>deprecated</groupId>
+      <artifactId>jdt</artifactId>
+      <version>3.4.2_r894</version>
+    </dependency>
+    <dependency>
+      <groupId>deprecated</groupId>
+      <artifactId>ant</artifactId>
+      <version>1.7.1</version>
+    </dependency>
+    <dependency>
+      <groupId>protobuf-java</groupId>
+      <artifactId>protobuf-java-rebased</artifactId>
+      <version>2.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>deprecated</groupId>
+      <artifactId>compiler-rebased</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>deprecated</groupId>
+      <artifactId>jetty</artifactId>
+      <version>6.1.11</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sourceforge.htmlunit</groupId>
+      <artifactId>htmlunit</artifactId>
+      <version>2.10</version>
+      <!--<scope>test</scope>-->
+    </dependency>
+    <!--           <dependency>
+                  <groupId>deprecated</groupId>
+                  <artifactId>htmlunit</artifactId>
+                  <version>2.9</version>
+              </dependency> -->
+    <!--           <dependency>
+                  <groupId>htmlunit-core</groupId>
+                  <artifactId>htmlunit-core-js</artifactId>
+                  <version>2.9</version>
+              </dependency> -->
+    <!-- undeclared dependencies for legacy lib htmlunit -->
+    <!--           <dependency>
+                  <groupId>commons-collections</groupId>
+                  <artifactId>commons-collections</artifactId>
+                  <version>3.2.1</version>
+              </dependency>
+              <dependency>
+                  <groupId>commons-lang</groupId>
+                  <artifactId>commons-lang</artifactId>
+                  <version>2.4</version>
+              </dependency>
+              <dependency>
+                  <groupId>org.apache.httpcomponents</groupId>
+                  <artifactId>httpclient</artifactId>
+                  <version>4.2.1</version>
+              </dependency> -->
+    <!-- end htmlunit deps -->
+  </dependencies>
   <build>
     <resources>
       <resource>
@@ -96,8 +94,25 @@
       </resource>
     </resources>
     <testResources>
+
       <testResource>
         <directory>src/test/java</directory>
+      </testResource>
+      <testResource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/*.gwt.xml</include>
+          <include>**/client/**</include>
+          <include>**/jjs/intrinsic/**</include>
+          <include>**/gwt/lang/**</include>
+          <include>**/*.properties</include>
+        </includes>
+      </testResource>
+      <testResource><!--TODO: remove cycle-->
+        <directory>${basedir}/../gwt-samples_hello/src/main/java/</directory>
+      </testResource>
+      <testResource><!--TODO: remove cycle-->
+        <directory>${basedir}/../gwt-user/src/main/java/</directory>
       </testResource>
     </testResources>
     <plugins>
@@ -116,22 +131,22 @@
         </configuration>
       </plugin>
       <plugin>
-       <groupId>org.apache.maven.plugins</groupId>
-       <artifactId>maven-jar-plugin</artifactId>
-       <version>2.2</version>
-       <executions>
-         <execution>
-           <phase>package</phase>
-           <goals>
-             <goal>test-jar</goal>
-           </goals>
-           <configuration>
-             <!-- test jar is required by gwt-user, whether or not we run tests here -->
-             <skip>false</skip>
-           </configuration>
-         </execution>
-       </executions>
-     </plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>2.4</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>test-jar</goal>
+            </goals>
+            <configuration>
+              <!-- test jar is required by gwt-user, whether or not we run tests here -->
+              <skip>false</skip>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
 </project>

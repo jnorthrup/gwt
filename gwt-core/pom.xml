@@ -10,10 +10,7 @@
   <name>gwt-core</name>
   <description>Core of the GWT/Java runtime, required classes for either the compiler or the other runtime details to be able to work</description>
   <url>http://keyframe/dev_core</url>
-  <scm>
-    <tag>HEAD</tag>
-  </scm>
-  
+
   <build>
     <resources>
       <resource>

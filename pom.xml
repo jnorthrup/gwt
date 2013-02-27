@@ -21,7 +21,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.2</version>
+      <version>4.11</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -89,6 +89,8 @@
     <module>gwt-core</module>
     <module>gwt-dev_core</module>
     <module>gwt-user</module>
+    <module>gwt-junit</module>
+
     <!--
         TODO: review
         <module>gwt-build_tools_ant_gwt</module>
@@ -123,5 +125,7 @@
     <module>gwt-tools_benchmark-viewer</module>
     <module>gwt-tools_cldr-import</module>
     <module>gwt-tools_datetimefmtcreator</module>
+    <module>gwt-dev_core_last</module>
+    <module>gwt-user_last</module>
   </modules>
 </project>

@@ -92,6 +92,7 @@
           <version>1.0.3.GA</version>
           <scope>test</scope>
       </dependency>
+
   </dependencies>
   <build>
     <resources>
@@ -104,12 +105,7 @@
         </includes>
       </resource>
     </resources>
-    <testResources>
-      <testResource>
-        <directory>src/test/java</directory>
-      </testResource>
-    </testResources>
-    <plugins>
+     <plugins>
         <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.10</version>
